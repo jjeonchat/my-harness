@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks":[{"type":"command","command":"sh \"${CLAUDE_PROJECT_DIR}/scripts/harness\" guard --role global"}]}],
+    "PreToolUse": [{"matcher":".*", "hooks":[{"type":"command","command":"sh \"${CLAUDE_PROJECT_DIR}/scripts/harness\" guard --role global"}]}],
+    "SubagentStop": [{"matcher":"^(researcher|screen-planner|concept-designer|design-builder|judge)$", "hooks":[{"type":"command","command":"sh \"${CLAUDE_PROJECT_DIR}/scripts/harness\" guard --role global"}]}]
+  }
+}

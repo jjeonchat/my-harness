@@ -1,0 +1,7 @@
+{
+  "flow": "내 자산 등록 → 판매 신청",
+  "screen_ids": ["asset-create", "sale-request"],
+  "references": ["사용자가 제공한 실제 레퍼런스 URL 또는 캡처 경로로 교체"],
+  "scope": {"asset_registration": true, "sale_application": true, "not_applicable_reason": ""},
+  "mode": "live"
+}

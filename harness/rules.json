@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "limits": {"key_screens_min": 2, "key_screens_max": 3, "width": 390, "height": 844, "max_repairs": 2, "max_workers": 1},
+  "design": {"shadow_types": ["DROP_SHADOW", "INNER_SHADOW"], "featured_fill": "#f3f3f3", "letter_spacing": 0, "forbidden_text_case": ["UPPER"], "radii": {"button": 9999, "badge": 9999, "toggle": 9999, "input": 16, "content-card": 24}, "icon_radius_ratio": 0.3},
+  "service": {"private_default": "private", "sale_roles": ["seller"], "public_targets": ["member_only", "sale_requested", "for_sale"], "forbidden_states": ["for_sale", "suspended", "판매 중", "판매 중지"]},
+  "checks": [
+    {"id":"ARTIFACTS", "target":"stage files", "condition":"required files exist and validate", "source":"harness-R4-artifacts.md"},
+    {"id":"REFERENCES", "target":"references", "condition":"accessible references >= 1", "source":"harness-R3-pipeline.md"},
+    {"id":"SPEC_COVERAGE", "target":"screen specification", "condition":"agreed screen IDs all present exactly once", "source":"harness-R5-gates.md"},
+    {"id":"PRIVATE_DEFAULT", "target":"asset registration", "condition":"default_visibility == service.private_default", "source":"../story-service.md §필수 원칙"},
+    {"id":"EXPLICIT_VISIBILITY", "target":"visibility transitions", "condition":"public targets require user_selected == true", "source":"../prd.md §14"},
+    {"id":"SELLER_ONLY", "target":"sale application", "condition":"sale_roles == service.sale_roles", "source":"../prd.md §7-4"},
+    {"id":"REVIEW_REQUIRED", "target":"approval transitions", "condition":"reviewed_by_operator == true for transitions to approved", "source":"../prd.md §6-7"},
+    {"id":"MVP_STATES", "target":"states and transitions", "condition":"no service.forbidden_states", "source":"../prd.md §9"},
+    {"id":"FIGMA_EVIDENCE", "target":"Figma snapshot", "condition":"complete, correctly scoped direct collection; fixtures only in test mode", "source":"harness-R5-gates.md"},
+    {"id":"KEY_COUNT", "target":"concept frames", "condition":"limits.key_screens_min <= count <= limits.key_screens_max", "source":"harness-R2-purpose.md"},
+    {"id":"FRAME_SIZE", "target":"concept frames", "condition":"width == limits.width and height == limits.height", "source":"harness-R5-gates.md"},
+    {"id":"DESIGN_COVERAGE", "target":"final frames", "condition":"agreed screen IDs all present exactly once", "source":"harness-R2-purpose.md"},
+    {"id":"NO_SHADOW", "target":"all collected nodes", "condition":"no visible design.shadow_types", "source":"harness-R5-gates.md"},
+    {"id":"FEATURED_FILL", "target":"featured-pricing nodes", "condition":"single solid opaque design.featured_fill", "source":"harness-R5-gates.md"},
+    {"id":"LETTER_SPACING", "target":"all text runs", "condition":"spacing == design.letter_spacing", "source":"harness-R5-gates.md"},
+    {"id":"TEXT_CASE", "target":"all text runs", "condition":"no design.forbidden_text_case", "source":"harness-R5-gates.md"},
+    {"id":"RADIUS", "target":"classified components", "condition":"corners match design.radii or icon_radius_ratio", "source":"harness-R5-gates.md"},
+    {"id":"APPROVAL", "target":"concept approval", "condition":"explicit user message binds run, version, concept and input hashes", "source":"harness-R7-orchestrator.md"},
+    {"id":"DEPENDENCIES", "target":"completed stages", "condition":"upstream checkpoints match current inputs and artifacts", "source":"harness-R4-artifacts.md"},
+    {"id":"RETRY_LIMIT", "target":"repair counters", "condition":"no unresolved rule after limits.max_repairs repairs", "source":"harness-R7-orchestrator.md"},
+    {"id":"VALIDATION_ERRORS", "target":"JSON shape", "condition":"invalid/missing fields block; no implicit defaults", "source":"harness-R8-validation.md"}
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-09-29T13:55:00.233942+00:00",
+  "automated": {
+    "count": 55,
+    "passed": true,
+    "tests": [
+      {
+        "test": "test_harness.HarnessTests.test_actual_design_coverage",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_check_is_readonly",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_concurrency",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_empty_subtree",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_featured_fill",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_forged_live_source_without_receipt",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_frame_size",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_approval_write",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_cross_folder",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_no_worker_approval_command",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_readonly_judge",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_shell_injection",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_symlink_escape",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_guard_worker_own_folder",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_icon_radius",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_implicit_visibility",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_key_count",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_live_rejects_fixture",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_malformed_json",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_missing_approval_transition",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_missing_evidence",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_missing_node_styles",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_na_is_not_pass",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_na_requires_reason",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_no_approval",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_no_implicit_approval",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_no_overwrite_existing_run",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_non_seller",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_normal_lifecycle",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_out_of_order",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_path_traversal",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_phase2_status",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_phase2_transition_not_declared_in_states",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_private_default",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_radius",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_rest_normalization_walks_descendants",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_rest_null_node_is_blocked",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_resume_invalidates_downstream",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_retry_limit_and_resume",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_retry_requires_registration",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_rules_change_restarts_stage1",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_shadow",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_stale_approval",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_string_boolean",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_text_spacing",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_unknown_role",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_unreviewed_approval",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.HarnessTests.test_uppercase",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_cli_help",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_cli_missing_run_nonzero",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_hook_blocks_shell_directly",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_live_approval_requires_user_event",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_rest_fetch_error_is_blocked",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_rest_unknown_node_role_is_blocked",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      },
+      {
+        "test": "test_harness.IntegrationChecks.test_settings_valid_and_roles_present",
+        "expected": "asserted contract holds",
+        "actual": "pass",
+        "status": "pass"
+      }
+    ]
+  },
+  "external": {
+    "live_figma": {
+      "status": "not_run",
+      "reason": "검증할 실제 Figma 파일/프레임 URL이 제공되지 않음"
+    },
+    "claude_code_runtime": {
+      "status": "not_run",
+      "reason": "현재 환경에서 claude 실행 파일을 찾지 못함"
+    }
+  },
+  "overall_validation_complete": false
+}

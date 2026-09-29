@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+export PYTHONDONTWRITEBYTECODE=1
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -n "${HARNESS_PYTHON:-}" ]; then
+  exec "$HARNESS_PYTHON" "$SCRIPT_DIR/harness.py" "$@"
+fi
+BUNDLED_PYTHON="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
+if [ -x "$BUNDLED_PYTHON" ]; then
+  exec "$BUNDLED_PYTHON" "$SCRIPT_DIR/harness.py" "$@"
+fi
+exec python3 "$SCRIPT_DIR/harness.py" "$@"
